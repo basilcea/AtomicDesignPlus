@@ -3,6 +3,6 @@ import { storiesOf } from '@storybook/react';
 import Loading from './loading';
 
 
-storiesOf('Pages', module)
+storiesOf('Loading_Page|Page', module)
   // eslint-disable-next-line react/react-in-jsx-scope
   .add('loading',()=> <Loading />)

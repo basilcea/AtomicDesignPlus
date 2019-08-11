@@ -1,7 +1,8 @@
-import React from 'react';
-import Icon from '../atoms/icon';
-import Loader from '../atoms/loader';
-import Styled from 'styled-components';
+import React from "react";
+import Icon from "../atoms/icon";
+import Loader from "../atoms/loader";
+import Styled from "styled-components";
+import { loadingContext } from "../../context/context";
 
 const Div = Styled.div`
 background-color:#154A78;
@@ -14,9 +15,20 @@ flex-direction:column;
 
 `;
 const LoadingPage = () => {
-return <Div>
-<Loader/>
-<Icon/>
-</Div>
-}
-export default LoadingPage
+  return (
+    <loadingContext.Provider value={{ loading: true }}>
+      <loadingContext.Consumer>
+        {({ loading }) =>
+          loading && (
+            <Div>
+              <Loader />
+              <Icon />
+            </Div>
+          )
+        }
+      </loadingContext.Consumer>
+    </loadingContext.Provider>
+  );
+};
+
+export default LoadingPage;
