@@ -4,9 +4,7 @@ import Icon from './icon';
 import Loader from './loader'
 import React from 'react';
 
-
-storiesOf('Atoms|Icon', module)
+storiesOf('Atoms|Pre-Auth', module)
   // eslint-disable-next-line react/react-in-jsx-scope
-  .add('base', () => <Icon onClick={action('clicked')}/>);
-storiesOf('Atoms|loader',module)
+  .add('logo', () => <Icon onClick={action('clicked')}/>)
   .add('loading',()=> <Loader />)
