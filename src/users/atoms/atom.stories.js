@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import StoryRouter from 'storybook-react-router'
 import Icon from './icon';
 import Loader from './loader'
 import React from 'react';
@@ -11,6 +12,7 @@ storiesOf('Loading_Page|Atoms', module)
   .add('lifted', () => <Icon onClick={action('clicked')}/>)
   .add('loading',()=> <Loader />)
 storiesOf('Landing_Page|Atoms', module)
+  .addDecorator(StoryRouter())
   .add('gyming',()=><Image />)
-  .add('sign in',()=> <Links value={'sign in'}/>)
-  .add('sign up',()=> <Links value={'sign up'}/>)
+  .add('sign in',()=> <Links value={'Sign in'}/>)
+  .add('sign up',()=> <Links value={'Sign up'}/>)

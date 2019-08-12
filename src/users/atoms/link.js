@@ -6,6 +6,15 @@ width:10vw;
 display:flex;
 justify-content:center;
 align-items:center;
+a{
+    text-decoration:none;
+    color:#011936
+    font-size:20px;
+    font-family:Arial;
+    &:hover{
+        color:#154A78
+    }
+}
 `
 const Links  = (props) => {
     return <Div>
