@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import Loading from './users/page/landing'
+import Landing from './users/page/splashScreen'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+     <Loading/>
+     <Landing/>
     </div>
   );
 }

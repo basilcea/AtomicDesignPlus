@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --updateSnapshot",
     "eject": "react-scripts eject",
     "storybook": "start-storybook"
   },
@@ -41,7 +41,6 @@
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.10",
     "@storybook/react": "^5.1.10",
-    "jest": "^24.8.0",
     "react-test-renderer": "^16.9.0",
     "storybook-react-router": "^1.0.5"
   }

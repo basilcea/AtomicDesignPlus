@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { TimelineLite } from "gsap";
+import { TimelineMax } from "gsap";
 import styled from "styled-components";
-import Dumbell from "../../assets/dumbell.png";
+import Dumbell from "../../assets/Logo.png";
 const Div = styled.div`
   display: flex;
   width: 30%;
@@ -17,18 +17,18 @@ const Img = styled.img`
 let loaderDiv;
 
 const tween = () =>
-  new TimelineLite({ paused: true }).fromTo(
+  new TimelineMax({ paused: true }).fromTo(
     loaderDiv,
-    1,
+    0.5,
     {
       opacity: 1
     },
-    { opacity: 0.3, onComplete: () => tween().reverse() }
+    { opacity: 0.3,delay:0.5, onComplete: () => tween().reverse() }
   );
 
-const Loader = () => {
+const Loader = (props) => {
   useEffect(() => {
-    tween().play();
+    props.loading && tween().repeat(-1).play();
   }, []);
 
   return (

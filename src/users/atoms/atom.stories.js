@@ -7,12 +7,12 @@ import React from 'react';
 import Image from './image';
 import Links from './link'
 
-storiesOf('Loading_Page|Atoms', module)
+storiesOf('Splash_Screen|Atoms', module)
   // eslint-disable-next-line react/react-in-jsx-scope
-  .add('lifted', () => <Icon onClick={action('clicked')}/>)
-  .add('loading',()=> <Loader />)
+  .add('loading',()=> <Loader loading={true} />)
 storiesOf('Landing_Page|Atoms', module)
   .addDecorator(StoryRouter())
+  .add('lifted', () => <Icon onClick={action('clicked')}/>)
   .add('gyming',()=><Image />)
   .add('sign in',()=> <Links value={'Sign in'}/>)
   .add('sign up',()=> <Links value={'Sign up'}/>)
