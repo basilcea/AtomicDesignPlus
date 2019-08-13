@@ -1,15 +1,30 @@
-import React from 'react';
-import Loading from './users/page/landing'
-import Landing from './users/page/splashScreen'
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Landing from "./users/page/landing";
+import Splash from "./users/page/splashScreen";
+import Authenticate from "./users/organisms/authenticated";
+import "./App.css";
+import LoadingContext from "./context/context";
+const Authenticated = Authenticate(Splash)(Landing);
 
-function App() {
+
+const App = () => {
+  const [loaded, setLoaded] = useState({
+    loading: true,
+    success: false
+  });
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded({ loading: false, success: true });
+    }, 3000);
+  }, []);
+
   return (
-    <div className="App">
-     <Loading/>
-     <Landing/>
+    <div>
+      <LoadingContext.Provider value={loaded}>
+        <Authenticated />
+      </LoadingContext.Provider>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,9 +1,8 @@
 import {createContext} from 'react';
 import Axios from 'axios'
 
-export const LoadingContext = createContext({
-    loading:true,
+ const LoadingContext = createContext({
+    loading:false,
     success:false,
-    failure:false,
-    loadPage:() =>{}
 })
+export default LoadingContext

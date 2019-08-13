@@ -1,7 +1,6 @@
 import React from "react";
 import Loader from "../atoms/loader";
 import Styled from "styled-components";
-import { LoadingContext } from "../../context/context";
 
 const Div = Styled.div`
 background-color:#2F303A;
@@ -11,15 +10,13 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-
 `;
-const LoadingPage = (props) => {
+const LoadingPage = props => {
   return (
-            <Div>
-              <Loader loading={props.loading} />
-            </Div>
-          )
-    
+    <Div>
+      <Loader loading={props.loading} />
+    </Div>
+  );
 };
 
 export default LoadingPage;

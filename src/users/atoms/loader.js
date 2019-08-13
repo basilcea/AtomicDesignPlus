@@ -15,20 +15,22 @@ const Img = styled.img`
   margin: 0;
 `;
 let loaderDiv;
+const tween = (action) =>
+new TimelineMax({ paused: true }).fromTo(
+  loaderDiv,
+  0.25,
+  {
+    opacity: 1
+  },
+  { opacity: 0.3, delay: 0.25, onComplete: () =>action  }
+);
 
-const tween = () =>
-  new TimelineMax({ paused: true }).fromTo(
-    loaderDiv,
-    0.5,
-    {
-      opacity: 1
-    },
-    { opacity: 0.3,delay:0.5, onComplete: () => tween().reverse() }
-  );
-
-const Loader = (props) => {
+const Loader = props => {
   useEffect(() => {
-    props.loading && tween().repeat(-1).play();
+    props.loading &&
+      tween(tween().reverse())
+        .repeat(-1)
+        .play();
   }, []);
 
   return (
