@@ -1,13 +1,13 @@
 import React from "react";
 import styled from 'styled-components';
 const P = styled.p `
-  height: 45px;
-  width: 30%;
-  color: #A8B8C9;
+  color: #FFFDFD;
   font-family: Arial;
-  font-size: 8vw;
+  text-shadow:1px 1px black;
+  font-size: 35px;
   font-weight: 700;
   line-height: 45px;
+  padding:0;
   text-align: center;
 `;
 const Icon = () => {

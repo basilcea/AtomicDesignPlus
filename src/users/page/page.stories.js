@@ -4,4 +4,4 @@ import Loading from './splashScreen';
 
 storiesOf('Loading_Page|Page', module)
   // eslint-disable-next-line react/react-in-jsx-scope
-  .add('loading',()=> <Loading />)
+  .add('loading',()=> <Loading loading={true}/>)

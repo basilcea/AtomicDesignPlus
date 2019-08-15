@@ -2,14 +2,15 @@ import React from 'react'
 import Styled from 'styled-components'
 import {Link} from 'react-router-dom'
 const Div = Styled.div`
-width:10vw;
 display:flex;
-justify-content:center;
+justify-content:flex-start;
 align-items:center;
+padding-bottom:5%;
 a{
     text-decoration:none;
-    color:#011936
-    font-size:20px;
+    color:#FFFDFD;
+    text-shadow:1px 1px black;
+    font-size:18px;
     font-family:Arial;
     &:hover{
         color:#154A78

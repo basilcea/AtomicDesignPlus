@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { TimelineMax } from "gsap";
 import styled from "styled-components";
-import Dumbell from "../../assets/Logo.png";
+import Dumbell from "../../assets/logo.png";
 const Div = styled.div`
   display: flex;
-  width: 30%;
-  height: 20%;
+  width: 70px;
+  height: 70px;
   justify-content: center;
   align-items: center;
+
 `;
 const Img = styled.img`
   width: 100%;
