@@ -13,9 +13,12 @@ border:none;
 color:#FFFDFD;
 border-radius:5px;
 height:60px;
-@media (min-width:500px){
+@media (min-width:1024px){
     margin-bottom:5%;
 height:80px;
+font-size:16px;
+width:150px;
+transform:translate(25vw,-25vh)
 }
 `;
 const Join =  () =>{

@@ -3,42 +3,78 @@ import Actions from '../molecules/links';
 import Tagline from '../molecules/tagline';
 import Button from '../atoms/joinButton';
 import Image from '../atoms/image';
+import Background from '../../assets/background_meduim.png';
+import BackgroundSmall from '../../assets/background.png';
 import styled from 'styled-components';
 
 const Div = styled.div`
     display:flex;
     flex-direction:column;
-    background-color:#2F303A;
+    background:url('${BackgroundSmall}');
+    background-repeat:no-repeat;
+    background-size:108% 100%;
+    background-position:right 100%;
     height:100vh;
-    /* align-items:center; */
-    justify-content:flex-start;
     img{
      padding-top:3%;
         
     }
+    @media (min-width:500px){
+        background:url('${Background}');
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:right center;
+}
 
+`;
+const Hero=styled.div`
+@media (max-width:1023px){
+display:none
+}
+display:flex;
+width:60%;
+padding-top:5%;
+flex-direction:column;
+h1{
+    color:#FFFDFD;
+    font-size:60px;
+    margin:0;
+    padding-left:23%
+}p{
+    color:#FFFDFD;
+    font-size:32px;
+    margin:0;
+}
 `;
 const ImageDiv=styled.div`
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding-top:20%;
-    padding-bottom:30%;
+    height:70%;
+    flex-direction:row;
+    padding:10% 0%;
     justify-content:center;
+    @media (min-width:500px){
+        padding:5% 0%;
+    }
 button{
     margin-top:0%;
     transform:translateY(-15px);
 }
 `
-;
 const LandingPage = () => {
     return (
        <Div>
-       <Tagline/>
+       <Tagline/>   
+       <ImageDiv>
        <Image/>
-       <Button/>
+       <Hero>
+       <h1>
+       Lifted
+       </h1>
+       <p>The best minimalistic workout tracker</p>
+       </Hero>
+       </ImageDiv>
+       <Button />
        <Actions/>
-    
        </Div>
     )
 }

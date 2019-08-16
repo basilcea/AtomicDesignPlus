@@ -3,8 +3,8 @@ import gymies from '../../assets/landing-page-girl.png'
 import styled from 'styled-components'
 const Div = styled.div`
 width:80%;
-height:50%;
-padding-top:10%;
+height:100%;
+padding-top:2%;
 margin:0 5%;
 display:flex;
 justify-content:center;
@@ -17,7 +17,7 @@ justify-content:center;
 `;
 const Image = styled.img`
 display:flex;
-width:100%;
+width:80%;
 height:100%;
 z-index:2;
 justify-content:center;
