@@ -1,7 +1,7 @@
-import React from 'react';
-import Dumbell from '../../assets/logo.png';
-import Lifted from '../atoms/icon';
-import Styled from 'styled-components';
+import React from "react";
+import Dumbell from "../../assets/logo.png";
+import Lifted from "../atoms/icon";
+import Styled from "styled-components";
 const Div = Styled.div`
     width: 100%;
     display:flex;
@@ -31,12 +31,12 @@ const Logodiv = Styled.div`
      
 
     }
-`
+`;
 const Logo = Styled.img`
   width: 50px;
   height: 50px;
   margin: 0;
-`
+`;
 const P = Styled.p`
  color:#FFFDFD;
         text-shadow:1px 1px black;
@@ -44,16 +44,16 @@ const P = Styled.p`
         @media(min-width:1024px){
             display:none;
         }
-`
-const Tagline = () =>  {
-    return (
-        <Div>
-        <Logodiv>
+`;
+const Tagline = () => {
+  return (
+    <Div>
+      <Logodiv>
         <Logo src={Dumbell} />
-        <Lifted/>
-        </Logodiv>
-        <P>The best minimalistic workout tracker </P>
-        </Div>
-    )
-}
-export default Tagline
+        <Lifted />
+      </Logodiv>
+      <P>The best minimalistic workout tracker </P>
+    </Div>
+  );
+};
+export default Tagline;

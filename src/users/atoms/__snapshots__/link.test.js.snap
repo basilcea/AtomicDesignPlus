@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`display a link 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa gqQkip"
+  >
+    <a
+      href="/sign_in"
+    >
+      Sign In
+    </a>
+  </div>
+</DocumentFragment>
+`;

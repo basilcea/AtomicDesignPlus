@@ -1,6 +1,8 @@
-import React from 'react'
-import Styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import React from "react";
+import Styled from "styled-components";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 const Div = Styled.div`
 display:flex;
 justify-content:flex-start;
@@ -16,10 +18,17 @@ a{
         color:#154A78
     }
 }
-`
-const Links  = (props) => {
-    return <Div>
-    <Link to={`/${props.link}`}>{props.value}</Link>
+`;
+const Links = props => {
+  return (
+    <Div>
+      <Link to={`/${props.link}`}>{props.value}</Link>
     </Div>
-}
-export default Links
+  );
+};
+export default Links;
+
+Links.propTypes = {
+  value: PropTypes.string,
+  link: PropTypes.string
+};

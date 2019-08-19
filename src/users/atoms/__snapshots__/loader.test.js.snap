@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loader should display 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa fdDfIe"
+  >
+    <img
+      class="sc-bwzfXH eHxbrp"
+      src="logo.png"
+    />
+  </div>
+</DocumentFragment>
+`;

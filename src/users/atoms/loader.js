@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { TimelineMax } from "gsap";
 import styled from "styled-components";
 import Dumbell from "../../assets/logo.png";
+import PropTypes from "prop-types";
 const Div = styled.div`
   display: flex;
   width: 70px;
   height: 70px;
   justify-content: center;
   align-items: center;
-
 `;
 const Img = styled.img`
   width: 100%;
@@ -16,20 +16,20 @@ const Img = styled.img`
   margin: 0;
 `;
 let loaderDiv;
-const tween = (action) =>
-new TimelineMax({ paused: true }).fromTo(
-  loaderDiv,
-  0.25,
-  {
-    opacity: 1
-  },
-  { opacity: 0.3, delay: 0.25, onComplete: () =>action  }
-);
+export const tween =(value, action) =>
+  new TimelineMax({ paused: true}).fromTo(
+    value,
+    0.25,
+    {
+      opacity: 1
+    },
+    { opacity: 0.3, delay: 0.25, onComplete: () => action }
+  );
 
 const Loader = props => {
   useEffect(() => {
     props.loading &&
-      tween(tween().reverse())
+      tween(loaderDiv, tween(loaderDiv).reverse())
         .repeat(-1)
         .play();
   }, []);
@@ -41,3 +41,11 @@ const Loader = props => {
   );
 };
 export default Loader;
+
+Loader.propTypes = {
+  loading: PropTypes.bool
+};
+Loader.defaultProps = {
+  loading: false
+};
+

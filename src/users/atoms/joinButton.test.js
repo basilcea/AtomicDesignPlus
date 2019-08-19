@@ -1,13 +1,11 @@
-
 import React from "react";
 import {render,cleanup} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Icon from "./icon";
+import JoinButton from "./joinButton";
 afterEach(cleanup)
-it('shows the word Lifted',()=>{
-    const {getByText, asFragment}= render(
-        <Icon/>
-    )
-    expect(getByText(/lifted/i)).toBeDefined();
+
+it('displays a button',()=>{
+    const {getByText, asFragment} = render(<JoinButton/>)
+    expect(getByText('Join Now')).toBeDefined()
     expect(asFragment()).toMatchSnapshot()
 })

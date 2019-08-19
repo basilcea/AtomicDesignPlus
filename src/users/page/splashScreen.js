@@ -24,5 +24,4 @@ export default LoadingPage;
 
 LoadingPage.propTypes = {
   Loader:PropTypes.element,
-  loading:PropTypes.bool
 }
