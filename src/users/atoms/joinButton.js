@@ -13,6 +13,9 @@ const Button = styled.button`
   color: #fffdfd;
   border-radius: 5px;
   height: 60px;
+  &:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
   @media (min-width: 1024px) {
     margin-bottom: 5%;
     height: 80px;

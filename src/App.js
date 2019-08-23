@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Landing from "./users/page/landing";
 import Splash from "./users/page/splashScreen";
+import {Route} from "react-router-dom";
 import Authenticate from "./users/organisms/authenticated";
 import "./App.css";
 import LoadingContext from "./context/context";
@@ -20,9 +21,12 @@ const App = () => {
 
   return (
     <div>
-      <LoadingContext.Provider value={loaded}>
+      <Route exact path='/' render={()=>
+        <LoadingContext.Provider value={loaded}>
         <Authenticated />
-      </LoadingContext.Provider>
+      </LoadingContext.Provider>}>
+      </Route>
+      <Route path='/'></Route>
     </div>
   );
 };

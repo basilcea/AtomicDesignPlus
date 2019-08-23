@@ -10,6 +10,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
@@ -20,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --updateSnapshot -verbose",
+    "test": "react-scripts test --updateSnapshot",
     "eject": "react-scripts eject",
     "storybook": "start-storybook"
   },
