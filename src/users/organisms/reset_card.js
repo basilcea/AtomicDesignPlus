@@ -13,7 +13,7 @@ const ResetPassword = ()=>{
     return (
         <Div>
         <UserIcon />
-        <ActionStatement />
+        <ActionStatement statement={'Reset Password'} />
         <p>Please input your registered users address</p>
         <InputArea  icon={<FaEnvelopeSquare />} name={"Email"} type={'email'}/>
         <SubActionStatement link={'login'}  value={'Go back to login'}/>
