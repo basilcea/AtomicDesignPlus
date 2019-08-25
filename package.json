@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --updateSnapshot",
+    "test": "react-scripts test --updateSnapshot --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook"
   },

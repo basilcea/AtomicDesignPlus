@@ -24,7 +24,9 @@ const Button = styled.button`
     transform: translate(25vw, -25vh);
   }
 `;
-const Join = () => {
-  return <Button>Join Now</Button>;
+const Join = (props) => {
+  const redirect=() => {
+  }
+  return <Button onClick={redirect}>Join Now</Button>;
 };
 export default Join;

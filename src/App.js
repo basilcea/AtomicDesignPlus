@@ -5,6 +5,7 @@ import {Route} from "react-router-dom";
 import Authenticate from "./users/organisms/authenticated";
 import "./App.css";
 import LoadingContext from "./context/context";
+import Signup from "./users/page/signInUp"
 const Authenticated = Authenticate(Splash)(Landing);
 
 
@@ -26,7 +27,9 @@ const App = () => {
         <Authenticated />
       </LoadingContext.Provider>}>
       </Route>
-      <Route path='/'></Route>
+      <Route path='/signup' render={
+        props => <Signup {...props} />
+      }></Route>
     </div>
   );
 };

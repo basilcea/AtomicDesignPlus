@@ -15,7 +15,7 @@ const ResetPassword = ()=>{
         <UserIcon />
         <ActionStatement statement={'Reset Password'} />
         <p>Please input your registered users address</p>
-        <InputArea  icon={<FaEnvelopeSquare />} name={"Email"} type={'email'}/>
+        <InputArea  icon={<FaEnvelopeSquare />} description={"Email"} type={'email'}/>
         <SubActionStatement link={'login'}  value={'Go back to login'}/>
         <ActionButton action={'Reset'}/>
         </Div>

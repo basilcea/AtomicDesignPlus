@@ -13,8 +13,8 @@ background-color:rgb(168 ,184 ,201 ,1);
 const Login = ()=>{
     return (
         <Div>
-        <UserIcon statement={'Login to Lifted'}/>
-        <ActionStatement />
+        <UserIcon/>
+        <ActionStatement statement={'Login to Lifted'}/>
         <SocialLogin  icon={<FaGoogle/>} description={'Connect with Gmail'} />
         <SocialLogin  icon={<FaFacebookF/>} description={'Connect with Facebook'} />
         <p>OR</p>
