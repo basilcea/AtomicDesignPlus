@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 const Button = styled.button`
 color:#FFFDFD;
-background-color:#154A78;
+background-color:#011936;
+border:1px solid #F6C192;
 font-size:16px;
-height:30px;
-width:30%;
+height:35px;
+width:40%;
 display:flex;
 justify-content:center;
 align-items:center;

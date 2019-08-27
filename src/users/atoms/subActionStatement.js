@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 const P = styled.p`
   font-size: 12px;
   color: #011936;
+  font-weight:bold;
+  text-align:right;
+  padding-right:10%;
   a {
     text-decoration: none;
     color: #fffdfd;
-    font-size: 14px;
 
     &:hover {
       color: #011936;

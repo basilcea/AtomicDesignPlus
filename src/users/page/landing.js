@@ -3,10 +3,9 @@ import Actions from "../molecules/links";
 import Tagline from "../molecules/tagline";
 import Button from "../atoms/joinButton";
 import Image from "../atoms/image";
+import styled from "styled-components";
 import Background from "../../assets/background_meduim.png";
 import BackgroundSmall from "../../assets/background.png";
-import styled from "styled-components";
-
 const Div = styled.div`
     display:flex;
     flex-direction:column;
@@ -25,7 +24,6 @@ const Div = styled.div`
         background-size:cover;
         background-position:right center;
 }
-
 `;
 const Hero = styled.div`
   @media (max-width: 1023px) {
@@ -61,7 +59,10 @@ const ImageDiv = styled.div`
     transform: translateY(-15px);
   }
 `;
-const LandingPage = () => {
+const LandingPage = (props) => {
+  const redirect=() =>{
+    return props.history.push("/signup");
+  } 
   return (
     <Div>
       <Tagline />
@@ -72,7 +73,7 @@ const LandingPage = () => {
           <p>The best minimalistic workout tracker</p>
         </Hero>
       </ImageDiv>
-      <Button />
+      <Button  redirect={redirect}/>
       <Actions />
     </Div>
   );

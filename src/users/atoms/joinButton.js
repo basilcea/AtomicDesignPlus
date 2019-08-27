@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
+import  {SignUpContext} from '../../context/context';
 const Button = styled.button`
-  background-color: #154a78;
+  background-color: #011936;
   width: 30%;
   text-align: center;
   z-index: 2;
@@ -11,6 +12,7 @@ const Button = styled.button`
   outline: none;
   border: none;
   color: #fffdfd;
+  border:1px solid #F6C192;
   border-radius: 5px;
   height: 60px;
   &:hover{
@@ -25,8 +27,10 @@ const Button = styled.button`
   }
 `;
 const Join = (props) => {
-  const redirect=() => {
-  }
-  return <Button onClick={redirect}>Join Now</Button>;
-};
+  return(
+  
+  <Button onClick={() => props.redirect()}>Join Now</Button>
+
+  );
+}
 export default Join;

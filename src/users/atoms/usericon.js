@@ -3,8 +3,8 @@ import { FaUser } from "react-icons/fa";
 import styled from 'styled-components';
 
 const Div = styled.div`
-  height: 61.89px;
-  width: 68.6px;
+  height: 60%;
+  width: 60%;
   border-radius: 50%;
   background-color: #FFFDFD;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);

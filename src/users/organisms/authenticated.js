@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-expressions */
 import React from "react";
-import LoadingContext from "../../context/context";
+import {LoadingContext} from "../../context/context";
 const Authenticate = SplashScreen => LoginPage => {
-  return () => {
+  return (props) => {
     return (
       <div>
         <LoadingContext.Consumer>
@@ -11,7 +11,7 @@ const Authenticate = SplashScreen => LoginPage => {
               return <SplashScreen loading={loading} />;
             }
             if (!loading && success) {
-              return <LoginPage />;
+              return <LoginPage {...props}/>;
             }
           }}
         </LoadingContext.Consumer>
