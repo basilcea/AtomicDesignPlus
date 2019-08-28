@@ -28,9 +28,8 @@ const Button = styled.button`
 `;
 const Join = (props) => {
   return(
-  
-  <Button onClick={() => props.redirect()}>Join Now</Button>
 
+  <Button onClick={() => props.redirect('signup')}>Join Now</Button>
   );
 }
 export default Join;

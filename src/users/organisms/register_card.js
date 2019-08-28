@@ -10,6 +10,7 @@ border:2px solid #F6C192 ;
 display:flex; 
 border-radius:10%;
 flex-direction:column;
+margin-top:1%;
 align-items:center;
 width:40%;
 height:70%;
@@ -20,9 +21,9 @@ form{
     height:300px;
 }
 @media (max-width:800px){
-    width:80%;
+    width:90%;
     order:-1;
-    height:60%;
+    height:70%;
 }
 `;
 const Register = ()=>{

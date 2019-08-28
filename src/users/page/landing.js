@@ -60,9 +60,10 @@ const ImageDiv = styled.div`
   }
 `;
 const LandingPage = (props) => {
-  const redirect=() =>{
-    return props.history.push("/signup");
-  } 
+  const redirect =(value) =>{
+    props.formToDisplay(value)
+    props.history.push('./signup')
+  }
   return (
     <Div>
       <Tagline />

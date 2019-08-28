@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const P = styled.p`
   font-size: 12px;
-  color: #011936;
+  color: #fffdfd;
   font-weight:bold;
   text-align:right;
   padding-right:10%;
