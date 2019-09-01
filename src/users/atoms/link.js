@@ -1,29 +1,25 @@
 import React from "react";
 import Styled from "styled-components";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Div = Styled.div`
+const Button = Styled.button`
 display:flex;
 justify-content:flex-start;
 align-items:center;
 padding-bottom:5%;
-a{
-    text-decoration:none;
-    color:#FFFDFD;
-    text-shadow:1px 1px black;
-    font-size:18px;
-    font-family:Arial;
-    &:hover{
-        color:#154A78
-    }
+background-color:inherit;
+border:none;
+font-size:18px;
+outline:none;
+color:#FFFDFD;
+&:hover{
+  color:#F6C192;
 }
 `;
 const Links = props => {
   return (
-    <Div>
-      <Link to={`/${props.link}`}>{props.value}</Link>
-    </Div>
+      <Button onClick={() => props.redirect(props.link)}>{props.value}</Button>
+  
   );
 };
 export default Links;

@@ -25,6 +25,9 @@ form{
     order:-1;
     height:70%;
 }
+@media (max-width:320px){
+    height:90%;
+}
 `;
 const Register = ()=>{
     return (

@@ -4,7 +4,7 @@ import ActionButton from '../atoms/actionButton';
 import ActionStatement from '../atoms/actionStatement'
 import InputArea from '../molecules/inputArea'
 import SubActionStatement from "../atoms/subActionStatement";
-import UserIcon from "../molecules/userIcon";
+
 import {FaEnvelopeSquare} from 'react-icons/fa';
 const Div = styled.div `
 background-color:rgb(168 ,184 ,201 ,1);
@@ -12,7 +12,6 @@ background-color:rgb(168 ,184 ,201 ,1);
 const ResetPassword = ()=>{
     return (
         <Div>
-        <UserIcon />
         <ActionStatement statement={'Reset Password'} />
         <p>Please input your registered users address</p>
         <InputArea  icon={<FaEnvelopeSquare />} description={"Email"} type={'email'}/>

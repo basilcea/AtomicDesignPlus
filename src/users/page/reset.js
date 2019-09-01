@@ -84,8 +84,8 @@ const signInup = props => {
       <SecondHalf>
         <Img src={loginImage} alt="" />
         <SignUpContext.Consumer>
-          {({ signup }) => {
-            return signup && <Register />;
+          {({ reset }) => {
+            return reset && <Reset />;
           }}
         </SignUpContext.Consumer>
       </SecondHalf>

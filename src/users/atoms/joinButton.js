@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
-import  {SignUpContext} from '../../context/context';
 const Button = styled.button`
   background-color: #011936;
   width: 30%;
@@ -28,7 +27,6 @@ const Button = styled.button`
 `;
 const Join = (props) => {
   return(
-
   <Button onClick={() => props.redirect('signup')}>Join Now</Button>
   );
 }

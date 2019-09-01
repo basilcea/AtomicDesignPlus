@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "../atoms/link";
+import Button from "../atoms/link";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 const Div = styled.div`
@@ -14,11 +14,11 @@ const Div = styled.div`
     margin-left: 60%;
   }
 `;
-const Actions = () => {
+const Actions = (props) => {
   return (
     <Div>
-      <Link link={"discover"} value={"Discover"} />
-      <Link link={"sign_in"} value={"Sign In"} />
+      <Button link={"discover"} value={"Discover"} {...props}/>
+      <Button link={"signin"} value={"Sign In"} {...props}/>
     </Div>
   );
 };
@@ -26,5 +26,5 @@ const Actions = () => {
 export default Actions;
 
 Actions.propTypes = {
-  Link: PropTypes.element
+  Button: PropTypes.element
 };

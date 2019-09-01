@@ -62,7 +62,7 @@ const ImageDiv = styled.div`
 const LandingPage = (props) => {
   const redirect =(value) =>{
     props.formToDisplay(value)
-    props.history.push('./signup')
+    props.history.push(`./${value}`)
   }
   return (
     <Div>
@@ -75,7 +75,7 @@ const LandingPage = (props) => {
         </Hero>
       </ImageDiv>
       <Button  redirect={redirect}/>
-      <Actions />
+      <Actions redirect={redirect}/>
     </Div>
   );
 };
