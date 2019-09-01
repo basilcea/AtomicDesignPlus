@@ -11,7 +11,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 padding-left:5px;
-margin-top:0.5%;
+margin-top:0.4%;
 
 font-family:Arial, Helvetica, sans-serif;
 background-color:#011936;

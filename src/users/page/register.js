@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { SignUpContext } from '../../context/context';
 import loginImage from '../../assets/loginPage.png';
 import styled from 'styled-components';
-import Register from '../organisms/register_card';
-import Login from '../organisms/login_card';
-import Reset from '../organisms/reset_card';
+import Register from '../organisms/registerCard';
+
 import Background from '../../assets/background_meduim.png';
 import BackgroundSmall from '../../assets/background.png';
 import Tagline from '../molecules/tagline';

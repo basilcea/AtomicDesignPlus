@@ -38,7 +38,7 @@ const Register = ()=>{
         <InputArea icon={<FaEnvelopeSquare />} description={'Email'} type={'email'}/>
         <InputArea icon={<FaLock />} description={'Password'} type={'password'}/>
         <InputArea icon={<FaLock />} description={'Confirm Password'} type={'password'}/>
-        <SubActionStatement statement={'Already Lifting?'} link={'login'}  value={'Login'}/>
+        <SubActionStatement statement={'Already Lifting?'} link={'signin'}  value={'Login'}/>
         </form>
         <ActionButton action={'Register'}/>
         </Div>

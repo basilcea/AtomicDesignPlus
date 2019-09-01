@@ -5,7 +5,7 @@ color:#FFFDFD;
 background-color:#011936;
 border:1px solid #F6C192;
 font-size:16px;
-height:35px;
+height:40px;
 width:40%;
 display:flex;
 justify-content:center;

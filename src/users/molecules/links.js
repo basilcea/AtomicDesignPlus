@@ -17,7 +17,6 @@ const Div = styled.div`
 const Actions = (props) => {
   return (
     <Div>
-      <Button link={"discover"} value={"Discover"} {...props}/>
       <Button link={"signin"} value={"Sign In"} {...props}/>
     </Div>
   );

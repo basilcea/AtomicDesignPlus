@@ -7,8 +7,8 @@ const Div = styled.div`
   justify-content:center;
   margin-bottom:3%;
   height:15%;
-  transform:translateY(-50%)
-`;
+  transform:translateY(-50%);
+  `;
 const InputArea = props => {
   return (
     <Div>

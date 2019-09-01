@@ -90,7 +90,7 @@ const Login = () => {
         <SubActionStatement link={'reset'} value={'forgot password?'} />
         <SubActionStatement
           statement={'Not lifted?'}
-          link={'register'}
+          link={'signup'}
           value={'Register'}
         />
         </SubActions>
