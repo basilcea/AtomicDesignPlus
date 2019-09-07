@@ -33,7 +33,7 @@ const Register = ()=>{
     return (
         <Div>
         <ActionStatement statement={'Register on Lifted'} />
-        <form>
+        <form autoComplete="off" >
         <InputArea icon={<FaUser />} description={'Username'} type={'text'}/>
         <InputArea icon={<FaEnvelopeSquare />} description={'Email'} type={'email'}/>
         <InputArea icon={<FaLock />} description={'Password'} type={'password'}/>

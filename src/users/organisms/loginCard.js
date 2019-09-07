@@ -70,7 +70,7 @@ const Login = () => {
   return (
     <Div>
       <ActionStatement statement={'Login to Lifted'} />
-      <form>
+      <form autoComplete="off">
         <Social>
           <SocialLogin name={<FaGoogle />} />
           <SocialLogin name={<FaFacebookF />} />

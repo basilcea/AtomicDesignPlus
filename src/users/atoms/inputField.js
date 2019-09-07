@@ -19,6 +19,6 @@ border-bottom:2px solid #F6C192;
 `;
 
 const InputField = (props)=>{
-    return <Input placeholder={props.name} type={props.type} />
+    return <Input autoComplete="off" placeholder={props.name} type={props.type} />
 }
 export default InputField;

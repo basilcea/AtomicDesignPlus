@@ -34,12 +34,16 @@ const P = styled.p`
   text-align:center;
   margin:0 5%;
   margin-bottom:10%;
+  @media (max-width: 800px) {
+margin-bottom: 20%;
+  
+  }
 `;
 const ResetPassword = () => {
   return (
     <Div>
       <ActionStatement statement={'Reset Password'} />
-      <form>
+      <form autoComplete="off">
       <P>Please input your registered email</P>
       <InputArea
         icon={<FaEnvelopeSquare />}
